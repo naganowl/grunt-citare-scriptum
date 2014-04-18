@@ -1,23 +1,23 @@
 {
-  "name": "grunt-groc",
-  "description": "Generate documentation using groc",
-  "version": "0.4.5",
-  "homepage": "https://github.com/jdcataldo/grunt-groc",
+  "name": "grunt-citare-scriptum",
+  "description": "Generate documentation using citare-scriptum",
+  "version": "0.0.1",
+  "homepage": "https://github.com/naganowl/grunt-citare-scriptum",
   "author": {
-    "name": "Justin Cataldo",
-    "url": "http://github.com/jdcataldo/"
+    "name": "Alan Wong",
+    "url": "http://github.com/naganowl/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jdcataldo/grunt-groc.git"
+    "url": "git://github.com/naganowl/grunt-citare-scriptum.git"
   },
   "bugs": {
-    "url": "https://github.com/jdcataldo/grunt-groc/issues"
+    "url": "https://github.com/naganowl/grunt-citare-scriptum/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jdcataldo/grunt-groc/blob/master/MIT-LICENSE.txt"
+      "url": "https://github.com/naganowl/grunt-citare-scriptum/blob/master/MIT-LICENSE.txt"
     }
   ],
   "scripts": {
@@ -27,7 +27,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "groc": "~0.6.3",
+    "citare-scriptum": "~0.5.7",
     "lodash": "~2.4.0"
   },
   "devDependencies": {
@@ -38,9 +38,8 @@
   },
   "keywords": [
     "gruntplugin",
-    "groc",
+    "citare-scriptum",
     "documentation"
   ],
-  "readmeFilename": "README.md",
-  "gitHead": "8371c0a4892fcfa85c7ef50638559f0f3c75b0f8"
+  "readmeFilename": "README.md"
 }

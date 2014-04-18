@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    groc: {
+    'citare-scriptum': {
       javascript: [
         "tasks/*.js", "README.md"
       ]
@@ -26,6 +26,6 @@ module.exports = function(grunt) {
   // Include jshint
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['jshint','groc']);
+  grunt.registerTask('default', ['jshint','citare-scriptum']);
 
 };

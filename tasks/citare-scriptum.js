@@ -1,24 +1,24 @@
 /*
- * grunt-groc  
- * https://github.com/jdcataldo/grunt-groc  
+ * grunt-citare-scriptum
+ * https://github.com/naganowl/grunt-citare-scriptum
  *
- * Copyright (c) 2013 Justin Cataldo  
- * Licensed under the MIT license.  
+ * Copyright (c) 2014 Alan Wong
+ * Licensed under the MIT license.
  */
 
 'use strict';
 
 module.exports = function(grunt) {
-  var groc = require('groc').CLI,
+  var citareScriptum = require('citare-scriptum').CLI,
       _    = require('lodash');
 
-  grunt.registerMultiTask('groc', 'Generate documenation using groc', function() {
+  grunt.registerMultiTask('citare-scriptum', 'Generate documenation using citare-scriptum', function() {
     // Merge options
     var options = this.options(),
         files   = this.filesSrc,
         // Set task as async
         done    = this.async(),
-        // Array of arguments to pass into groc
+        // Array of arguments to pass into citare-scriptum
         args    = [];
 
     // Add the files to the arguments
@@ -32,14 +32,14 @@ module.exports = function(grunt) {
       if(!_.isArray(value)) {
         value = [value];
       }
-      
+
       _.each(value, function(value) {
         args.push([sw, value.toString()]);
       });
     });
 
-    // Pass the args to groc
-    groc(_.flatten(args), function(error){
+    // Pass the args to citare-scriptum
+    citareScriptum(_.flatten(args), function(error){
       if(error) {
         grunt.warn(error);
         process.exit(1);
